@@ -26,7 +26,7 @@ img {
 }
 p {
 	color: black;
-	font-size: 1.4rem;
+	font-size: 2rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
 	font-weight: 300;
@@ -42,12 +42,12 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: white;
+	color: rgb(168, 187, 228);
 }
 
 .cta {
 	display: inline-block;
-	padding: 10px 30px;
+	padding: 20px 20px;
 	color: white;
 	background-color: transparent;
 	border: 2px solid white;
@@ -55,17 +55,21 @@ p {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	margin-top: 30px;
+	margin-bottom: 30px;	
+	border-radius: 25px;
+	display: grid;
+	
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
 .cta:hover {
 	color: white;
-	background-color: black;
+	background-color: rgb(30, 29, 49);
 }
 .brand h1 {
 	font-size: 3rem;
 	font-family: 'Megrim', cursive;	
-	color: white;
+	color: rgb(255, 255, 255);
 }
 .brand h1 span {
 	color: white;
@@ -81,21 +85,28 @@ p {
 	height: auto;
 }
 #header .header {
-	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
-	transition: 0.3s ease background-color;
-}
-#header .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
+	min-height: 4vh;
+	max-height: 8vh;
+	background-color: rgba(185, 169, 169, 0.24);
+	transition: 0.5s ease background-color;
 }
 #header .social-item img {
+	height: 30px;
+	width: 30px;
+	margin: 0px 0px;
+	padding: 0px;
 	filter: grayscale(1);
 	transition: 0.3s ease filter;
+	vertical-align: middle;
 }
-#header .social-item:hover img {
-	filter: grayscale(0);
+#header .social-item:hover {
+	/*filter: grayscale(0);*/
+	background-color: #160711;
+	border-radius: 50%;	
+	opacity:0.7 !important;
+	filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+	box-shadow: 0 0 0px #ffffff !important; 
+
 }
 #header .nav-bar {
 	display: flex;
@@ -130,7 +141,7 @@ p {
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
-	color: white;
+	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	padding: 20px;
 	display: block;
@@ -211,13 +222,34 @@ p {
 /* End Header section */
 
 /* Hero Section */
-#hero {
-	background-image: url(./img/hero-bg.png);
+#hero {	
+	/*background-image: url(./img/hero-bg.png);*/
+
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
+	
 }
+.auto-resizable-iframe {
+	max-width: 1040px;
+	margin: 0px auto;
+	align-items: center;
+  }
+  
+  .auto-resizable-iframe > div {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0px;
+  }
+  
+  .auto-resizable-iframe iframe {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+  }
 #hero::after {
 	content: '';
 	position: absolute;
@@ -225,7 +257,8 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: black;
+	background-image: linear-gradient(60deg, #dcbae9 0%, #7a9abb 100%);
+	/*background-color: rgb(159, 155, 214);*/
 	opacity: 0.7;
 	z-index: -1;
 }
@@ -243,6 +276,7 @@ p {
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
+	
 }
 #hero h2 {
 	display: block;
@@ -297,41 +331,53 @@ p {
 
 /* End Hero Section */
 
-/* Services Section */
-#services .services {
+/* worlds Section */
+#worlds {
+	background-image: linear-gradient(60deg, #819ab8 0%, #b2c2d3 100%);
+}
+#worlds .worlds {
 	flex-direction: column;
 	text-align: center;
-	max-width: 1500px;
+	max-width: 2000px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 50px 0;
 }
-#services .service-top {
-	max-width: 500px;
+#worlds .worlds-top {
+	max-width: 1000px;
+	padding: 50px;
 	margin: 0 auto;
+	hyphens: auto; 
+	text-align: justify
+	/*padding: 10%;*/
 }
-#services .service-bottom {
+#worlds .worlds-top img {
+	padding: 5%;
+}
+
+#worlds .worlds-bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
-#services .service-item {
+#worlds .worlds-item {
 	flex-basis: 80%;
 	display: flex;
+	height: 550px;
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: top;
 	flex-direction: column;
 	padding: 30px;
-	border-radius: 10px;
-	background-image: url(./img/img-1.png);
+	border-radius: 25px; 
+	/*background-image: url(./img/img-1.png); */
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
 }
-#services .service-item::after {
+#worlds .worlds-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -342,95 +388,103 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
-#services .service-bottom .icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
+#worlds .worlds-bottom .background img {
+	background: center;
+	background-size: cover;	
+	border-radius: 10%;
+	padding-bottom: 20px;
 }
-#services .service-item h2 {
+#worlds .worlds-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+	font-family: "megrim", cursive;
 }
-#services .service-item p {
+#worlds .worlds-item p {
 	color: white;
 	text-align: left;
 }
-/* End Services Section */
+/* End worlds Section */
 
-/* Projects section */
-#projects .projects {
+/* Buys section */
+#Buy {
+	background-image: linear-gradient(60deg, #99bce4 0%, #515f6d 100%);
+}
+#Buy .Buy {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#projects .projects-header h1 {
+#Buy .Buy-header h1 {
 	margin-bottom: 50px;
 }
-#projects .all-projects {
+
+#Buy .all-Buy {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
-#projects .project-item {
+#Buy .Buy-item {
+	margin: 50px;
+	/*height: 8000px;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	width: 80%;
-	margin: 20px auto;
+	margin: 20px;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 25px;
 }
-#projects .project-info {
-	padding: 30px;
+#Buy .Buy-info {	
+	padding: 30px;		
 	flex-basis: 50%;
 	height: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	background-image: linear-gradient(60deg, #ffffff 0%, #acc1da 100%);
+	color: rgb(0, 0, 0);
 }
-#projects .project-info h1 {
+#Buy .Buy-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
-#projects .project-info h2 {
+#Buy .Buy-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
-#projects .project-info p {
-	color: white;
+#Buy .Buy-info p {
+	color: rgb(0, 0, 0);
 }
-#projects .project-img {
+#Buy .Buy-img {
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
-#projects .project-img:after {
+#Buy .Buy-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
+	/*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;*/
 }
-#projects .project-img img {
+#Buy .Buy-img img {
 	transition: 0.3s ease transform;
 }
-#projects .project-item:hover .project-img img {
+#Buy .Buy-item:hover .Buy-img img {
 	transform: scale(1.1);
 }
-/* End Projects section */
+/* End Buys section */
 
 /* About Section */
 #about {
@@ -462,15 +516,24 @@ p {
 #about .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
-	padding: 10px 20px;
+	padding: 50px;
 	font-size: 2rem;
 }
 #about .col-left .about-img {
-	height: 100%;
-	width: 100%;
+	/*height: 100%; */
+	border-radius: 50%;
+	width: 100%;	
 	position: relative;
-	border: 10px solid white;
+	align-content: center;
+	border: 5px solid white;	
 }
+
+img.rounded-corners {
+	align-content: center;
+	vertical-align: middle;
+	border-radius: 50%;	
+}
+
 #about .col-left .about-img::after {
 	content: '';
 	position: absolute;
@@ -479,13 +542,14 @@ p {
 	height: 98%;
 	width: 98%;
 	border: 7px solid white;
-	z-index: -1;
+	z-index: -1;	
+	border-radius: 50%;
 }
 /* End About Section */
 
 /* contact Section */
 #contact {
-	background-image: linear-gradient(60deg, #426083 0%, #264566 100%);
+	background-image: linear-gradient(60deg, #738ca8 0%, #264566 100%);
 }
 
 
@@ -498,6 +562,7 @@ p {
 #contact .contact-items {
 	/* max-width: 400px; */
 	width: 100%;	
+	
 }
 #contact .contact-item {
 	width: 80%;
@@ -525,6 +590,8 @@ p {
 	font-size: 1.5rem;
 	font-weight: 500;
 	margin-bottom: 5px;
+	/*text-align: center;*/
+
 }
 #contact .contact-info h2 {
 	font-size: 2rem;
@@ -560,14 +627,36 @@ p {
 	height: 50px;
 	width: 50px;
 	margin: 0 5px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+	justify-content: center;
+	padding: 5px;		
 }
+
+#footer .social-item a{
+	color: black; /*to make the links black*/
+}
+
 #footer .social-item img {
 	filter: grayscale(1);
 	transition: 0.3s ease filter;
+	vertical-align: middle;
 }
-#footer .social-item:hover img {
+#footer .social-item:hover {
 	filter: grayscale(0);
+	background-color: #ffffff;
+	border-radius: 25px;
+	opacity:0.7 !important;
+	filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+	box-shadow: 0 0 0px #000000 !important; 
+	vertical-align: middle;
+	color:black;
+	
 }
+
+
 #footer p {
 	color: white;
 	font-size: 1.3rem;
@@ -597,12 +686,12 @@ p {
 }
 @keyframes text_reveal {
 	100% {
-		color: white;
+		color: rgb(230, 206, 247);
 	}
 }
 @keyframes text_reveal_name {
 	100% {
-		color: white;
+		color: rgb(247, 247, 247);
 		
 		font-weight: 800;
 	}
@@ -629,33 +718,33 @@ p {
 	}
 	/* End Hero */
 
-	/* Services Section */
-	#services .service-bottom .service-item {
+	/* worlds Section */
+	#worlds .worlds-bottom .worlds-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Services Section */
+	/* End worlds Section */
 
-	/* Project */
-	#projects .project-item {
+	/* Buy */
+	#Buy .Buy-item {
 		flex-direction: row;
 	}
-	#projects .project-item:nth-child(even) {
+	#Buy .Buy-item:nth-child(even) {
 		flex-direction: row-reverse;
 	}
-	#projects .project-item {
+	#Buy .Buy-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
-	#projects .all-projects .project-info {
+	#Buy .all-Buy .Buy-info {
 		height: 100%;
 	}
-	#projects .all-projects .project-img {
+	#Buy .all-Buy .Buy-img {
 		height: 100%;
 	}
-	/* End Project */
+	/* End Buy */
 
 	/* About */
 	#about .about {
@@ -742,7 +831,7 @@ p {
 	}
 	/* End header */
 
-	#services .service-bottom .service-item {
+	#worlds .worlds-bottom .worlds-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
