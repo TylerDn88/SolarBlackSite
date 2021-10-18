@@ -364,7 +364,7 @@ p {
 #worlds .worlds-item {
 	flex-basis: 80%;
 	display: flex;
-	height: 550px;
+	height: 700px;
 	align-items: flex-start;
 	justify-content: top;
 	flex-direction: column;
@@ -395,7 +395,7 @@ p {
 	padding-bottom: 20px;
 }
 #worlds .worlds-item h2 {
-	font-size: 2rem;
+	font-size: 3rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
