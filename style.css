@@ -91,13 +91,14 @@ p {
 	transition: 0.5s ease background-color;
 }
 #header .social-item img {
-	height: 30px;
+	//height: 30px;
 	width: 30px;
 	margin: 0px 0px;
 	padding: 0px;
 	filter: grayscale(1);
 	transition: 0.3s ease filter;
 	vertical-align: middle;
+	horizontal-align:middle;
 }
 #header .social-item:hover {
 	/*filter: grayscale(0);*/
