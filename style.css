@@ -648,14 +648,12 @@ img.rounded-corners {
 	vertical-align: middle;
 }
 #footer .social-item:hover {
-	filter: grayscale(0);
-	background-color: #ffffff;
-	border-radius: 25px;
-	opacity:0.3 !important;
-	filter:alpha(opacity=30) !important; /* For IE8 and earlier */
-	box-shadow: 0 0 0px #000000 !important; 
-	vertical-align: middle;
-	color:black;
+	/*filter: grayscale(0);*/
+	background-color: #160711;
+	border-radius: 50%;	
+	opacity:0.7 !important;
+	filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+	box-shadow: 0 0 0px #ffffff !important; 
 	
 }
 
