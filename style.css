@@ -734,7 +734,7 @@ img.rounded-corners {
 		flex-direction: row-reverse;
 	}
 	#Buy .Buy-item {
-		height: 250px; /* 400 */
+		height: 300px; /* 400 */
 		margin: 0;
 		width: 100%;
 		border-radius: 0;		
