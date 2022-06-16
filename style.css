@@ -734,9 +734,9 @@ img.rounded-corners {
 		flex-direction: row-reverse;
 	}
 	#Buy .Buy-item {
-		height: 400px;
+		height: 250px; /* 400 */
 		margin: 0;
-		/*width: 100%;*/
+		width: 100%;
 		border-radius: 0;		
 	}
 	#Buy .all-Buy .Buy-info {
