@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Megrim&display=swap');
 * {
 	padding: 0;
 	margin: 0;
@@ -6,7 +6,7 @@
 }
 html {
 	font-size: 10px;
-	font-family: 'Fredoka One', cursive;
+	font-family: 'Noto Sans';
 	scroll-behavior: smooth;
 }
 a {
