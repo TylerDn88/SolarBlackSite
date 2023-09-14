@@ -10,6 +10,10 @@ html {
 	scroll-behavior: smooth;
 	overflow:scroll;
 }
+
+body {
+    overflow-x: hidden;
+} 
 a {
 	text-decoration: none;
 }
@@ -22,6 +26,7 @@ a {
 }
 img {
 	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 p {
@@ -31,6 +36,7 @@ p {
 	line-height: 2.5rem;
 	font-weight: 300;
 	letter-spacing: 0.05rem;
+	text-align: justify;
 }
 .section-title {
 	font-size: 4rem;
@@ -58,8 +64,7 @@ p {
 	margin-bottom: 30px;	
 	border-radius: 25px;
 	display: grid;
-	text-align: center;
-	
+	text-align: center;	
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
@@ -68,6 +73,7 @@ p {
 	background-color: rgb(30, 29, 49);
 }
 .brand h1 {
+	margin-top: 10px;
 	font-size: 3rem;
 	font-family: 'Megrim', cursive;	
 	color: rgb(255, 255, 255);
@@ -86,20 +92,22 @@ p {
 	height: auto;
 }
 #header .header {
-	min-height: 4vh;
+	/*min-height: 4vh;*/
+	min-height: 60px;
 	max-height: 8vh;
+
 	background-color: rgba(185, 169, 169, 0.24);
 	transition: 0.5s ease background-color;
 }
 #header .social-item img {
-	//height: 30px;
-	width: 30px;
+	/*height: 30px;*/
+	width: 20px;
 	margin: 0px 0px;
 	padding: 0px;
 	filter: grayscale(1);
 	transition: 0.3s ease filter;
 	vertical-align: middle;
-	horizontal-align:middle;
+	justify-content: center; /* Center items horizontally */
 }
 #header .social-item:hover {
 	/*filter: grayscale(0);*/
@@ -112,7 +120,8 @@ p {
 }
 #header .nav-bar {
 	display: flex;
-	align-items: center;
+	align-items: flex-start; /* Align items at the top */
+	/*align-items: center;*/
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
@@ -129,25 +138,36 @@ p {
 	top: 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
-	z-index: 1;
-	overflow-x: hidden;
+	/*z-index: 1;*/
+	/* overflow-x: hidden; */
 	transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 2.5rem;
+	font-size: 1.8rem; /* Adjust the font size as needed */
+	padding: 15px; /* Adjust padding to maintain spacing */
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
-	padding: 20px;
 	display: block;
 }
+/* Adjust spacing in the navbar for smaller screens */
+@media only screen and (max-width: 768px) {
+	#header .social-item {
+	  margin: 5px; /* Reduce the margin for social items */
+	}
+  
+	#header .nav-list ul a {
+	  font-size: 1.5rem; /* Further reduce font size */
+	  padding: 10px; /* Further reduce padding */
+	}
+  }
 #header .nav-list ul a::after {
 	content: attr(data-after);
 	position: absolute;
@@ -235,6 +255,7 @@ p {
 }
 .auto-resizable-iframe {
 	max-width: 1040px;
+	/*min-width: 400px;*/
 	margin: 0px auto;
 	align-items: center;
   }
@@ -273,12 +294,11 @@ p {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 1rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
-	animation-delay: 1s;
-	
+	animation-delay: 1s;	
 }
 #hero h2 {
 	display: block;
@@ -338,22 +358,22 @@ p {
 	background-image: linear-gradient(60deg, #819ab8 0%, #b2c2d3 100%);
 }
 #worlds .worlds {
-	flex-direction: column;
+	/* flex-direction: column; */
 	text-align: center;
 	max-width: 2000px;
 	margin: 0 auto;
 	padding: 50px 0;
 }
 #worlds .worlds-top {
-	max-width: 1000px;
+	max-width: 1300px;
 	padding: 50px;
 	margin: 0 auto;
-	hyphens: auto; 
-	text-align: justify
+	/* hyphens: auto;  */
+	/* text-align: justify */
 	/*padding: 10%;*/
 }
 #worlds .worlds-top img {
-	padding: 5%;
+	padding: 0%; 
 }
 
 #worlds .worlds-bottom {
@@ -418,9 +438,10 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
+	width: 90%;
 }
 #Buy .Buy-header h3 {
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 }
 
 #Buy .all-Buy {
@@ -497,7 +518,7 @@ p {
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 20px;
+	padding: 50px;
 }
 #about .col-left {
 	width: 250px;
@@ -624,18 +645,19 @@ img.rounded-corners {
 }
 #footer .social-icon {
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 30px;
 }
 #footer .social-item {
+	
 	height: 50px;
 	width: 50px;
-	margin: 0 5px;
+	margin: 10px;
 	display: flex;
 	text-align: center;
 	align-items: center;
-	vertical-align: middle;
-	horizontal-align: middle;
-	justify-content: center;
+	vertical-align: middle;	
+	justify-content: center;/* Center items horizontally */
 	padding: 5px;		
 }
 
