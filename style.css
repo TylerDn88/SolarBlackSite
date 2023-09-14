@@ -8,6 +8,7 @@ html {
 	font-size: 10px;
 	font-family: 'Noto Sans';
 	scroll-behavior: smooth;
+	overflow:scroll;
 }
 a {
 	text-decoration: none;
