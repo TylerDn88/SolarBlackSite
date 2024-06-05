@@ -255,15 +255,20 @@ p {
 }
 .auto-resizable-iframe {
 	max-width: 1040px;
+	width: 100%;
 	/*min-width: 400px;*/
 	margin: 0px auto;
-	align-items: center;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	
   }
   
   .auto-resizable-iframe > div {
 	position: relative;
 	padding-bottom: 75%;
 	height: 0px;
+	width: 100%;
   }
   
   .auto-resizable-iframe iframe {
