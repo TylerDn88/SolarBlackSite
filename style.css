@@ -736,6 +736,10 @@ img.rounded-corners {
 		font-size: 6rem;
 	}
 
+	.auto-resizable-iframe {
+                max-width: 100%;
+            }
+
 	/* Hero */
 	#hero h1 {
 		font-size: 10rem;
