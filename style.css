@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 html {
-	font-size: 10px;
+	font-size: 0.35rem;
 	font-family: 'Noto Sans';
 	scroll-behavior: smooth;
 	overflow:scroll;
@@ -125,7 +125,7 @@ p {
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	max-width: 1300px;
+	max-width: 1220px;
 	padding: 0 10px;
 }
 #header .nav-list ul {
@@ -443,6 +443,16 @@ p {
 /* End worlds Section */
 
 /* Buys section */
+
+.video-container {
+	border-radius: 25px; /* Adjust the radius as necessary */
+	overflow: hidden; /* This ensures that anything overflowing the rounded corners is hidden */
+	width: 100%; /* Optional: ensures the container takes the full width */
+}
+
+#SolarBlack_hero{
+	border-radius: 25px;
+}
 #Buy {
 	background-image: linear-gradient(60deg, #99bce4 0%, #515f6d 100%);
 }
@@ -470,7 +480,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 80%;
+	width: 100%;
 	margin: 20px;
 	overflow: hidden;
 	border-radius: 25px;
@@ -487,8 +497,8 @@ p {
 	color: rgb(0, 0, 0);
 }
 #Buy .Buy-info h3 {
-	font-size: 4rem;
-	font-weight: 500;
+	font-size: 3rem;
+	font-weight: bold;
 }
 #Buy .Buy-info h2 {
 	font-size: 1.8rem;
@@ -749,6 +759,18 @@ img.rounded-corners {
                 max-width: 100%;
             }
 
+			.catjinni-trailer{
+				border-radius: 0; /* Adjust the border radius as needed */
+			}
+
+			.video-container {
+				border-radius: 0; /* Adjust the radius as necessary */
+				overflow: hidden; /* This ensures that anything overflowing the rounded corners is hidden */
+				width: 100%; /* Optional: ensures the container takes the full width */
+			}
+			#SolarBlack_hero{
+				border-radius: 0;
+			}
 	/* Hero */
 	#hero h1 {
 		font-size: 10rem;
