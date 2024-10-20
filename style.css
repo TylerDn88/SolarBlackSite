@@ -449,6 +449,14 @@ p {
 	overflow: hidden; /* This ensures that anything overflowing the rounded corners is hidden */
 	width: 100%; /* Optional: ensures the container takes the full width */
 }
+#solarblack-description{
+	padding: 8%;
+	font-weight: bold;
+	font-size: 3rem;
+	color: #000000;
+	background-image: linear-gradient(60deg,#99bce4 0%, white 100%);
+	border-radius: 25px;
+}
 
 #SolarBlack_hero{
 	border-radius: 25px;
@@ -754,7 +762,9 @@ img.rounded-corners {
 	h1.section-title {
 		font-size: 6rem;
 	}
-
+	#solarblack-description{
+		border-radius: 0;
+	}
 	.auto-resizable-iframe {
                 max-width: 100%;
             }
