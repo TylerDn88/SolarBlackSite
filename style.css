@@ -5,10 +5,10 @@
 	box-sizing: border-box;
 }
 html {
-	font-size: 0.35rem;
+	font-size: 0.4rem;
 	font-family: 'Noto Sans';
 	scroll-behavior: smooth;
-	overflow:scroll;
+	overflow:scroll;	
 }
 
 body {
@@ -451,6 +451,7 @@ p {
 }
 #solarblack-description{
 	padding: 8%;
+	line-height: 3.5rem;
 	font-weight: bold;
 	font-size: 3rem;
 	color: #000000;
