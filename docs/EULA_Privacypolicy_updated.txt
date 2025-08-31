@@ -1,0 +1,128 @@
+Solar Black (“Game”)
+
+Copyright (c) 2021–2025 Solar Black (“Developer”)
+Publisher: Niel Widy (“Publisher”, “us”, “we”, or “our”)
+Last Updated: August 31, 2025
+
+This document consists of two parts:
+1. Privacy & Data Collection Policy – what data is collected, why, and how it’s handled.
+2. End-User License Agreement (EULA) – the legal terms for using the Game.
+
+By installing or playing the Game, you acknowledge that you have read, understood, and agree to these terms.
+
+--------------------------------------------------
+PRIVACY & DATA COLLECTION POLICY
+
+Definitions
+- Personal Data: Information about an identifiable individual, such as your platform ID or username.
+- Usage Data: Data collected automatically from the Game (e.g., scores, achievements, hardware type).
+- Developer Partners: Services we integrate with to provide leaderboards and platform functionality (e.g., Microsoft Azure PlayFab, Valve, Meta/Oculus, Pico, SteamVR).
+- Platform Holder: The storefront or hardware provider (e.g., Valve, Meta/Oculus, Pico).
+
+Legal Basis for Processing
+- Personal and Usage Data are processed under the legal bases of contract performance (providing Game features) and legitimate interest (maintaining leaderboards, cloud saves, and Game functionality).
+
+Types of Data We Collect
+Personal Data:
+- Device identifiers (UUID, platform ID)
+- Profile/screen name
+- Game progress and achievements
+
+Usage Data:
+- Level progress, scores, play sessions
+- Device type (VR headset model)
+
+Cookies:
+- The Game itself does not use cookies. Platform services may have their own policies.
+
+How We Use Your Data:
+- Enable leaderboards, achievements, and cloud saves
+- Diagnose bugs and support technical issues
+- Ensure platform compliance
+
+Retention of Data:
+- Personal and Usage Data are stored only as long as necessary to provide Game features. For cloud-saved data and leaderboards, this is typically **12 months** after last use or until account deletion. Retention criteria are based on functional necessity.
+
+Data Transfers:
+- Data may be transferred to servers outside the EU (e.g., PlayFab, Steam) under appropriate safeguards such as Standard Contractual Clauses.
+
+Disclosure:
+- Data may be disclosed if:
+  * Required by law
+  * Necessary to prevent fraud or misuse
+  * To protect legal rights or safety
+
+Children’s Privacy:
+- The Game is not directed to children under **14** years old. Limited data collected from minors is used only for core functionality, in compliance with GDPR Legitimate Interest exceptions.  
+- Parents may request removal of a child’s data by contacting us.
+
+Data Subjects’ Rights:
+Under GDPR, you have the right to:
+- Access your personal data
+- Correct inaccuracies
+- Request deletion (“right to be forgotten”)
+- Restrict processing
+- Object to processing
+- Data portability
+- Not be subject to automated decision-making
+- Lodge a complaint with a supervisory authority (Austrian Data Protection Authority – DSB)
+
+To exercise your rights, contact: solarblackgame(at)gmail.com
+
+Security:
+- Industry-standard measures are used to protect data, but absolute security cannot be guaranteed.
+
+Do Not Track:
+- We do not track users beyond what is necessary for the Game to function.
+
+Policy Updates:
+- Changes will appear on our website and in-game notice where applicable.
+
+Contact:
+- Questions: solarblackgame(at)gmail.com
+
+--------------------------------------------------
+END USER LICENSE AGREEMENT (EULA)
+
+IMPORTANT: PLEASE READ THIS CAREFULLY. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE THE GAME.
+
+License Grant:
+- Publisher Niel Widy grants a limited, non-exclusive, non-transferable license to install and use Solar Black for personal, non-commercial purposes, subject to these terms.
+
+Restrictions:
+- Do NOT reverse-engineer, modify, or create derivative works
+- Do NOT copy, distribute, resell, or sublicense
+- Do NOT use the Game for unlawful or offensive purposes
+
+Platform Sharing:
+- Shared accounts are subject to the same license terms. Any violations may affect all linked users.
+
+Copyright:
+- Solar Black and all related assets are protected by copyright and intellectual property law.
+- © 2021–2025 Solar Black. All rights reserved.
+
+User Content:
+- You may create and share non-commercial videos featuring Solar Black gameplay, including monetization via YouTube/Twitch, provided you:
+  * Credit: © 2025 Solar Black
+  * Do not claim affiliation or endorsement
+  * Do not include Game music (unless permitted)
+
+Limitation of Liability:
+- The Game is provided “AS IS” without warranties.
+- Publisher and Developer are not liable for:
+  * Loss of data or profits
+  * Service interruptions
+  * Indirect or consequential damages
+
+Termination:
+- Violation of these terms results in immediate license termination. Uninstall the Game upon termination.
+
+Governing Law:
+- This agreement is governed by the laws of **Vienna, Austria**. Users submit to the non-exclusive jurisdiction of the courts in Vienna.
+
+Data Use Acknowledgment:
+- By playing the Game, you agree that limited data may be processed as described in the Privacy Policy for the purpose of providing the Game.
+
+Contact:
+- For EULA or privacy inquiries: solarblackgame(at)gmail.com
+
