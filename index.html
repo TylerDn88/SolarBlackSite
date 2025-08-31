@@ -203,14 +203,31 @@
       <!-- src="./img/SolarBlackLogo.png"  ./img/optimized/solarblack-poster-1040x320-international.jpg-->
 
 
-      <div>
+      <!--<div>
         <div class="video-container">
           <video id="SolarBlack-trailer" autoplay muted loop controls width="100%">
-            <source src="SolarBlack_Boxing_Web.mp4" type="video/mp4"> <!--src="solarblack-intro_1.mp4" -->
+            <source src="SolarBlack_Boxing_Web.mp4" type="video/mp4"> 
             Your browser does not support the video tag.
           </video>
         </div>
-      </div>
+      </div> 
+    -->
+
+      <div class="video-container" style="position: relative; width: 100%; max-width: 1280px; margin: auto;">
+  <video 
+      id="SolarBlack-trailer" 
+      autoplay 
+      muted 
+      loop 
+      playsinline 
+      poster="SolarBlack-poster.jpg" 
+      style="width: 100%; height: auto;"
+  >
+    <source src="SolarBlack_Boxing_Web.mp4" type="video/mp4">
+    <source src="SolarBlack_Boxing_Web.webm" type="video/webm">
+    Your browser does not support the video tag. Please <a href="SolarBlack_Boxing_Web.mp4">download the video</a>.
+  </video>
+</div>
 
       
       <p id="solarblack-description">
